@@ -1,0 +1,1106 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Your super  ApplicationAPI",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/add_in_basket": {
+            "post": {
+                "tags": [
+                    "Basket"
+                ],
+                "summary": "add_in_basket",
+                "description": "add_in_basket",
+                "operationId": "add_in_basket",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "product_id": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "product_id"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/get_my_basket": {
+            "post": {
+                "tags": [
+                    "Basket"
+                ],
+                "summary": "get_my_basket",
+                "description": "get_my_basket",
+                "operationId": "get_my_basket",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/delete_all_basket": {
+            "post": {
+                "tags": [
+                    "Basket"
+                ],
+                "summary": "delete_all_basket",
+                "description": "delete_all_basket",
+                "operationId": "delete_all_basket",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/minus_basket_product": {
+            "post": {
+                "tags": [
+                    "Basket"
+                ],
+                "summary": "minus_basket_product",
+                "description": "minus_basket_product",
+                "operationId": "minus_basket_product",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "product_id": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "product_id"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/get_shops": {
+            "get": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "get_shops",
+                "description": "get_shops",
+                "operationId": "get_shops",
+                "requestBody": {
+                    "description": "Auth Token Required",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/get_category": {
+            "get": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "get_category",
+                "description": "get_category",
+                "operationId": "get_category",
+                "requestBody": {
+                    "description": "Auth Token Required",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/get_all_made_in": {
+            "get": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "get_all_made_in",
+                "description": "get_all_made_in",
+                "operationId": "get_all_made_in",
+                "requestBody": {
+                    "description": "Auth Token Required",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/get_all_taste": {
+            "get": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "get_all_taste",
+                "description": "get_all_taste",
+                "operationId": "get_all_taste",
+                "requestBody": {
+                    "description": "Auth Token Required",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/add_or_delete_in_favorite": {
+            "post": {
+                "tags": [
+                    "Favorite"
+                ],
+                "summary": "add_or_delete_in_favorite",
+                "description": "add_or_delete_in_favorite",
+                "operationId": "add_or_delete_in_favorite",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "product_id": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "product_id"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "deleted is Favorite",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "Created Is Favorite",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/get_my_favorite": {
+            "get": {
+                "tags": [
+                    "Favorite"
+                ],
+                "summary": "get_my_favorite",
+                "description": "get_my_favorite",
+                "operationId": "get_my_favorite",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "deleted is Favorite",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "201": {
+                        "description": "Created Is Favorite",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/filtered_product": {
+            "post": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "filtered_product",
+                "description": "filtered_product",
+                "operationId": "filtered_product",
+                "requestBody": {
+                    "description": "Ham Filttracian ham searcha anumes mi apaiov vor@ uzumes filtres uxxarkumes et key@ u staanumes tvyaln prroductner@ karas smiangamicc mi qani key uxarkes orinac category_id u taste_id  paginationi depqum petqa uxarkact tvyalner@ noric uxarkes u paage nshes  page neextt",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "made_in_id": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1"
+                                    },
+                                    "category_id": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1"
+                                    },
+                                    "taste_id": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1"
+                                    },
+                                    "orderbyPriceAsc": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1"
+                                    },
+                                    "orderbyPriceDesc": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1"
+                                    },
+                                    "search": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "search"
+                                    },
+                                    "max_price": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "100000"
+                                    },
+                                    "min_price": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "100000"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "login",
+                "description": "login",
+                "operationId": "login",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "password"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/forgot_password": {
+            "post": {
+                "tags": [
+                    "ForgotPassword"
+                ],
+                "summary": "forgot_password",
+                "description": "forgot_password",
+                "operationId": "forgot_password",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/validation_forgot_password_code": {
+            "post": {
+                "tags": [
+                    "ForgotPassword"
+                ],
+                "summary": "validation_forgot_password_code",
+                "description": "validation_forgot_password_code",
+                "operationId": "validation_forgot_password_code",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "phone_verify": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1234"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/add_new_password": {
+            "post": {
+                "tags": [
+                    "ForgotPassword"
+                ],
+                "summary": "add_new_password",
+                "description": "add_new_password",
+                "operationId": "add_new_password",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "phone_verify": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1234"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "123456"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "123456"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "logout",
+                "description": "logout",
+                "operationId": "logout",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/add_new_password2": {
+            "post": {
+                "tags": [
+                    "MyCabinet"
+                ],
+                "summary": "add_new_password2",
+                "description": "add_new_password2",
+                "operationId": "add_new_password2",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "old_password": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "old_password"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "password"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "password_confirmation"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/auth_user_info": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "auth_user_info",
+                "description": "auth_user_info",
+                "operationId": "auth_user_info",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/add_new_email": {
+            "post": {
+                "tags": [
+                    "MyCabinet"
+                ],
+                "summary": "add_new_email",
+                "description": "add_new_email",
+                "operationId": "add_new_email",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "email"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/validation_email_condidate_code": {
+            "post": {
+                "tags": [
+                    "MyCabinet"
+                ],
+                "summary": "validation_email_condidate_code",
+                "description": "validation_email_condidate_code",
+                "operationId": "validation_email_condidate_code",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "code"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/update_user_name": {
+            "post": {
+                "tags": [
+                    "MyCabinet"
+                ],
+                "summary": "update_user_name",
+                "description": "update_user_name",
+                "operationId": "update_user_name",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "name   "
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/add_new_order": {
+            "post": {
+                "tags": [
+                    "Orders"
+                ],
+                "summary": "add_new_order",
+                "description": "add_new_order",
+                "operationId": "add_new_order",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "name"
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "email"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "phone"
+                                    },
+                                    "order_type": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "         Shops        Or  Drugoi      "
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/my_orders_history": {
+            "get": {
+                "tags": [
+                    "Orders"
+                ],
+                "summary": "my_orders_history",
+                "description": "my_orders_history",
+                "operationId": "my_orders_history",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/all_products": {
+            "get": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "all_products",
+                "description": "all_products",
+                "operationId": "all_products",
+                "requestBody": {
+                    "description": "all_products",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/single_page_product/product_id=5": {
+            "get": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "single_page_product",
+                "description": "single_page_product",
+                "operationId": "single_page_product",
+                "requestBody": {
+                    "description": "single_page_product",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/saite_header_and_footer_info": {
+            "get": {
+                "tags": [
+                    "SaayteInfo"
+                ],
+                "summary": "saite_header_and_footer_info",
+                "description": "saite_header_and_footer_info",
+                "operationId": "saite_header_and_footer_info",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/registration": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "registration",
+                "description": "registration",
+                "operationId": "registration",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "Arman"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "password"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "password_confirmation"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/confirm_registration": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "confirm_registration",
+                "description": "confirm_registration",
+                "operationId": "confirm_registration",
+                "requestBody": {
+                    "description": "Pass user register",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "phone_verify": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "1111"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/all_slider": {
+            "get": {
+                "tags": [
+                    "Slider"
+                ],
+                "summary": "all_slider",
+                "description": "all_slider",
+                "operationId": "all_slider",
+                "requestBody": {
+                    "description": "all_slider",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "register created",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
